@@ -1,0 +1,377 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+	margin: 0;
+	background-color: #f8f8f8;
+	color:#242424;
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+.section-inner {
+	max-width: 550px;
+	padding: 40px 0;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 640px) {
+	.section-inner {
+		max-width: 580px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.section-inner {
+		max-width: 1140px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+.headers {
+	font-family: 'Playfair Display', serif;
+	color: #253438;
+	margin-top: 0;
+	text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+	.headers {
+		text-align: left;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+	}
+/* Hlavička - Menu */
+
+.hlavicka {
+	padding: 10px 0;
+	text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+.hlavicka {
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+}
+
+
+.logo {
+	width: 170px;
+}
+
+.menu ul {
+	padding: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+
+.menu ul li + li {
+	border-top: 1px solid #303339;
+}
+
+.menu a {
+	display: block;
+	text-decoration: none;
+	color: #242424;
+	padding: 10px 15px;
+}
+
+.menu a:hover {
+	background-color: #6ea6c9;
+	color: #f0f0f0;
+}
+
+@media screen and (min-width: 640px) {
+	.menu ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	.menu ul li + li {
+		border-top: none;
+	}
+
+	.menu a:hover {
+		border-radius: 20px;
+	}
+}
+
+/* Hlavička - Menu - konec */
+
+/* Hero sekce */
+
+.hero {
+	background-image: url(/images/banner.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	color: #f8f8f8;
+    width: 100%;
+	min-height: 10rem;
+	max-height: 20rem;
+}
+
+/* Hero sekce - konec*/
+
+/* Patička*/
+footer {
+	color: white;
+	background-color: #0f2a64;
+	text-align: center;
+	padding: 15px 0;
+}
+
+/* Patička - konec*/
+
+/* Introduction sekce */
+
+.column {
+	font-family: 'Lora', serif;
+}
+
+.introduction img {
+	border-radius: 5px;
+	max-width: 100%;
+	height: auto;
+}
+
+.buttonintroduction {	
+	padding: 30px;
+}
+
+.buttonintroduction a{
+	padding: 15px 40px;
+	border-radius: 30px;
+	background-color: #6ea6c9;
+	text-decoration: none;
+	color: #f8f8f8;
+}
+
+.buttonintroduction a:hover{
+	background-color: #0f2a64;
+	}
+
+	@media screen and (min-width: 960px) {
+		.introduction {
+			display: flex;
+			gap: 30px;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.column {
+			flex: 0 1 50%;
+		}
+	
+		.buttonintroduction {
+			margin-bottom: 0;
+		}
+	
+	}
+
+/* Introduction sekce - konec*/
+
+/* Portfolio v úvodu*/
+.portfoliointro {
+	background-color: #f0f0f0;
+
+}
+
+.product {
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+	max-width: 400px;
+	text-align: center;
+}
+
+.product-content  {
+	padding: 20px;
+}
+
+.product-content h3 {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 0;
+}
+
+.product img {
+	height: auto;
+	max-width: 100%;
+}
+
+.product + .product {
+	margin-top: 20px;
+}
+@media screen and (min-width: 640px){
+	.portfoliointroduction {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.product {
+		flex: 0 0 calc(50% - 30px);
+	}
+
+	.product + .product {
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.product {
+		flex: 0 0 calc(25% - 30px);
+	}
+	
+}
+/* Portfolio v úvodu - konec*/
+
+/* Recenze */
+
+.recenze img {
+	border-radius: 5px;
+	max-width: 100%;
+	height: auto;
+}
+
+	@media screen and (min-width: 960px) {
+		.recenze {
+			display: flex;
+			gap: 30px;
+			justify-content: space-between;
+			align-items: center;
+		}
+	
+	}
+
+/* Recenze - konec*/
+
+/* O mně - začátek*/
+.omne img {
+	border-radius: 5px;
+	max-width: 100%;
+	height: auto;
+}
+
+	@media screen and (min-width: 960px) {
+		.omne {
+			display: flex;
+			gap: 30px;
+			justify-content: space-between;
+			align-items: center;
+		}
+	
+	}
+
+/*
+ O mně - konec*/
+
+
+/* Portfolio - konec*/
+.gallery__grid {
+	line-height:0;
+	-webkit-column-count:2; 
+	-webkit-column-gap:5px; 
+	-moz-column-count:2;
+	-moz-column-gap:5px;
+	column-count:2;
+	column-gap:5px;
+}
+
+.gallery__grid img {
+	width: 100% !important;
+	height: auto !important;
+	margin-bottom:5px;
+	
+ }
+ 
+ @media (min-width: 640px) {
+	.gallery__grid {
+	 -moz-column-count:    3;
+	 -webkit-column-count: 3;
+	 column-count:         3;
+	}
+ }
+
+ @media (min-width: 960px) {
+	.gallery__grid {
+	 -moz-column-count:    4;
+	 -webkit-column-count: 4;
+	 column-count:         4;
+	}
+ }
+
+/* Portfolio - konec*/
+
+/* Kontakt
+*/
+
+.contact__grid-item {
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+.contact__title {
+	margin-top: calc((1rem) * 2);
+	font-family: 'Playfair Display', serif;
+	color: #253438;
+}
+
+.form-field {
+	margin-bottom: 1rem;
+}
+
+.form-field label {
+	display: block;
+	color: hsl(0, 0%, 50%);
+	font-size: 15px;
+	margin-bottom: calc((1rem) / 2);
+}
+
+.form-field :is(input, textarea, select) {
+	width: 100%;
+	padding: calc((1rem) / 2);
+	border: 1px solid hsl(0, 0%, 70%);
+	border-radius: 4px;
+}
+
+.required:after {
+	content: "*";
+	color: red;
+	margin-left: 4px;
+}
+
+@media screen and (min-width: 700px) {
+	.contact__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: calc((1rem) * 1.5);
+	}
+
+}
+
+
+/* Kontakt konec */

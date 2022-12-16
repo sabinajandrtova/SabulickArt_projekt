@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+	<!-- Hlavička -->
+	<header class="hlavicka">
+		
+			<img class="logo" src="/images/logo.jpg" alt="logo SabulickArt">
+		<nav class="menu" role="navigation">
+			<ul>
+				<li><a href="/">Úvod</a></li>
+				<li><a href="/omne/">O mně</a></li>
+				<li><a href="/portfolio/">Portfolio</a></li>
+				<li><a href="/kontakt/">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+	<!-- Hero sekce  -->
+	<section class="hero">
+		<div class="section-inner">
+		</div>
+	</section>
+
+
+<main class="main">
+{{ content | safe }}
+</main>
+
+	<!-- Patička -->
+	<footer>
+		<p>©2022, Sabina Jandrtová. Závěrečný projekt kurzu Staň se kóderkou.</p>
+	</footer>
+
+
+</body>
+</html>
